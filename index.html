@@ -18,6 +18,30 @@
     <title>Austin Scott, Improviser</title>
   </head>
   <body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Austin Scott</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <a class="nav-item nav-link" href="#">Classes</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!--/Navigation-->
+
     <!--Carousel-->
     <div
       id="carousel"
@@ -49,7 +73,18 @@
       </div>
     </div>
     <!--/Carousel-->
-
+    <div class="jumbotron">
+      <h1 class="display-4">Hello</h1>
+    </div>
+    <div class="jumbotron">
+      <h1 class="display-4">Hello</h1>
+    </div>
+    <div class="jumbotron">
+      <h1 class="display-4">Hello</h1>
+    </div>
+    <div class="jumbotron">
+      <h1 class="display-4">Hello</h1>
+    </div>
     <!--Bootstrap Scripts-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -66,5 +101,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!--Custom JS for navbar transparency-->
+    <script>
+      $(window).scroll(function() {
+        $(".navbar").toggleClass("scrolled", $(this).scrollTop() > 700);
+      });
+    </script>
   </body>
 </html>

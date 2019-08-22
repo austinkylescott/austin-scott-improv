@@ -23,8 +23,26 @@
   border-radius: 100%;
 }
 
+.navbar {
+  margin-bottom: -56px;
+  z-index: 100;
+}
+.bg-dark {
+  background: transparent !important;
+  transition: 250ms ease-in-out;
+}
+.bg-dark.scrolled {
+  background: #343a40 !important;
+}
+
 @media (max-width: 576px) {
-  #carousel .carousel-item {
+  #carousel {
     display: none !important;
+  }
+  .bg-dark {
+    background: #343a40 !important;
+  }
+  body {
+    margin-top: 88px;
   }
 }
