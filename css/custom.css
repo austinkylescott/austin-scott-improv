@@ -42,6 +42,19 @@
   .bg-dark {
     background: #343a40 !important;
   }
+
+  .nav-item {
+    text-align: center;
+  }
+  .nav-item:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 20px;
+    border-bottom: 1px solid #454d55;
+  }
+
   body {
     margin-top: 88px;
   }
